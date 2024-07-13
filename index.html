@@ -489,7 +489,7 @@
         style: style,
         onEachFeature: function (feature, layer) {
               layer.bindTooltip("<h2>" + feature.properties.NAME + "</h2>" + "<p>Total Population: <b>" + feature.properties.P0010001.toLocaleString() + "</b><br>"
-            + "Total Housing Units: <b>" + feature.properties.H0010001.toLocaleString('en-US') + "</b><br>" + "Percent Housing Vacant: <b>" + feature.properties.PCT_H0010002.toPrecision(3) + "%</b></p>");
+            + "Total Housing Units: <b>" + feature.properties.H0010001.toLocaleString('en-US') + "</b><br>" + "Percent Housing Occupied: <b>" + feature.properties.PCT_H0010002.toPrecision(3) + "%</b></p>");
         }
       });
       dataLayer.addTo(map);
