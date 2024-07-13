@@ -184,7 +184,7 @@
 <body>
 
   <section id="title">
-    <b>Vermont Fema Flood Map</b>
+    <b>Vermont Flood Hazard Map</b>
   </section>
 
   <div id="map" class='viewport-full viewport-full-ml'></div>
@@ -199,19 +199,16 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <p><h2>About This Map</h2><br>
-        Using public data, this interactive map shows the locations of greenhouses around the commonwealth of Kentucky.  This map is for agricultural service provider use only.</p><br>
+        Using 2020 USCensus, FEMA Flood Hazard Data, and National Weather Service, this interactive map shows county census information, flood prone areas, and historical rainstorm events.</p><br>
         <h2>Using This Map</h2><br>
         <p><b>Clicking/tapping</b> an icon on the map shows shows detail.</p><br>
         <p>The +/- buttons at the top left <b>zoom in and out</b>, as does the mouse wheel, and standard mobile gestures.</p><br>
         <p>Map <b>resources can be turned on and off</b> by type in the <b>legend at the top right</b>, which will appear after bringing the mouse to or tapping on the <b>Map Layer Icon</b> -> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="images/layers.png"> </p><br>
         <!-- <p>The <b>search box</b> allows users to enter a physical address, city name, or zipcode to <b>place a marker</b>.</p><br> -->
         <h2>Data Sources</h2><br>
-        <p>Funding and support for this project provided by the <a href="https://agpolicy.ky.gov/board/Pages/default.aspx" target="_blank">Kentucky Agricultural
-          Development Board</a> through the <a href="http://kyhortcouncil.org/" target="_blank">
-            Kentucky Horticulture Council</a>.</p>
+        <p>Funding and support for this project provided by the nobody.</p>
       <p><br>Map developed and maintained by <br><br>
-        <a href="http://www.uky.edu/hort/">Department of Horticulture</a><br>
-        University of Kentucky</p>
+        Yours Truly</p>
     </div>
 
   </div>
@@ -277,38 +274,38 @@
     };
 
     // set icons for layer types
-    var kypgrowerIcon = L.icon({
-        iconUrl: "./icons/kypgrowericon.png",
+    var rainEventIcon = L.icon({
+        iconUrl: "./icons/rainEventicon.png",
         iconSize: [40, 40],
         popupAnchor: [0, -15]
     });
 
-    var koapIcon = L.icon({
-        iconUrl: "./icons/koap.png",
+    var extremeRainEventIcon = L.icon({
+        iconUrl: "./icons/extremeRainEventicon.png",
         iconSize: [40, 40],
         popupAnchor: [0, -15]
     });
 
-    var agffaIcon = L.icon({
-        iconUrl: "./icons/agffa.png",
+    var severeRainEventIcon = L.icon({
+        iconUrl: "./icons/severeRainEventicon.png",
         iconSize: [40, 40],
         popupAnchor: [0, -15]
     });
 
-    var kynurserylicenseIcon = L.icon({
-        iconUrl: "./icons/kynurserylicense.png",
+    var heavyRainEventIcon = L.icon({
+        iconUrl: "./icons/heavyRainEventicon.png",
         iconSize: [40, 40],
         popupAnchor: [0, -15]
     });
 
-    var kypproductsIcon = L.icon({
-        iconUrl: "./icons/kypproducts.png",
+    var intenseRainEventIcon = L.icon({
+        iconUrl: "./icons/intenseRainEventicon.png",
         iconSize: [40, 40],
         popupAnchor: [0, -15]
     });
 
-    var kgadirectoryIcon = L.icon({
-        iconUrl: "./icons/kgadirectory.png",
+    var moderateRainEventIcon = L.icon({
+        iconUrl: "./icons/moderateRainEventicon.png",
         iconSize: [40, 40],
         popupAnchor: [0, -15]
     });
@@ -317,7 +314,7 @@
   $.getJSON("./data/vt-counties.geojson", function(counties) {
         console.log(counties);
         // load CSV file
-        omnivore.csv('data/KGM_geocoded.csv')
+        omnivore.csv('data/rainfall-data-july-2024-storm.csv')
         .on('ready', function(e) {
             console.log(e.target);
             drawMap(e.target.toGeoJSON());
@@ -333,104 +330,98 @@
 
     // create layer groups by resource type
 
-    var kypgrowerLayer = L.geoJson(data, {
-      filter: kypgrowerFilter,
+    var extremeRainEventLayer = L.geoJson(data, {
+      filter: extremeRainEventFilter,
       pointToLayer: function(feature,latlng) {
-          return L.marker(latlng, {icon: kypgrowerIcon});
+          return L.marker(latlng, {icon: extremeRainEventIcon});
         },
         onEachFeature : function(feature,layer) {
           var props = feature.properties;
           var locationPopup =
-            "<h2>Data Source:<br>"+ props.Data_Source + "<br></h2>" + props.County + " County<br><br>" + "<b>" + props.Organization + "<br></b>"
-            + props.Last_known_Address + "<br><br><b>Contact Information:  <br>" + props.Last_Known_Contact_Name + "<br></b>" + props.Phone + "<br>" + props.Email + "<br>" + props.Web +
-            "<br>Status:  <font color='red'><b>" + props.Status__2023_ + "</p></p>";
+            "<h2>" + props.Data_Type + "</h2><b>" + props.Amount + "</b> inches Recorded<br><br><b>" + props.Time + "</b> on <b>" + props.Date + "</b><br>Location: <b>"
+            + props.Town + "</b>";
             layer.bindPopup(locationPopup);
           }
       }).addTo(map);
 
-    var kynurserylicenseLayer = L.geoJson(data, {
-      filter: kynurserylicenseFilter,
-      pointToLayer: function(feature,latlng) {
-          return L.marker(latlng, {icon: kynurserylicenseIcon});
-        },
-        onEachFeature : function(feature,layer) {
-          var props = feature.properties;
-          var locationPopup =
-            "<h2>Data Source:<br>"+ props.Data_Source + "<br></h2>" + props.County + " County<br><br>" + "<b>" + props.Organization + "<br></b>"
-            + props.Last_known_Address + "<br><br><b>Contact Information:  <br>" + props.Last_Known_Contact_Name + "<br></b>" + props.Phone + "<br>" + props.Email + "<br>" + props.Web +
-            "<br>Status:  <font color='red'><b>" + props.Status__2023_ + "</p></p>";
-            layer.bindPopup(locationPopup);
-        }
-      }).addTo(map);
-
-    var koapLayer = L.geoJson(data, {
-      filter: koapFilter,
+    var severeRainEventLayer = L.geoJson(data, {
+        filter: severeRainEventFilter,
         pointToLayer: function(feature,latlng) {
-            return L.marker(latlng, {icon: koapIcon});
+            return L.marker(latlng, {icon: severeRainEventIcon});
           },
           onEachFeature : function(feature,layer) {
             var props = feature.properties;
             var locationPopup =
-             "<h2>Data Source:<br>"+ props.Data_Source + "<br></h2>" + props.County + " County<br><br>" + "<b>" + props.Organization + "<br></b>"
-             + props.Last_known_Address + "<br><br><b>Contact Information:  <br>" + props.Last_Known_Contact_Name + "<br></b>" + props.Phone + "<br>" + props.Email + "<br>" + props.Web +
-             "<br>Status:  <font color='red'><b>" + props.Status__2023_ + "</p></p>";
-             layer.bindPopup(locationPopup);
-          }
+              "<h2>" + props.Data_Type + "</h2><b>" + props.Amount + "</b> inches Recorded<br><br><b>" + props.Time + "</b> on <b>" + props.Date + "</b><br>Location: <b>"
+              + props.Town + "</b>";
+              layer.bindPopup(locationPopup);
+            }
       }).addTo(map);
 
-      var agffaLayer = L.geoJson(data, {
-        filter: agffaFilter,
+    var heavyRainEventLayer = L.geoJson(data, {
+          filter: heavyRainEventFilter,
           pointToLayer: function(feature,latlng) {
-              return L.marker(latlng, {icon: agffaIcon});
+              return L.marker(latlng, {icon: heavyRainEventIcon});
             },
             onEachFeature : function(feature,layer) {
               var props = feature.properties;
               var locationPopup =
-               "<h2>Data Source:<br>"+ props.Data_Source + "<br></h2>" + props.County + " County<br><br>" + "<b>" + props.Organization + "<br></b>"
-               + props.Last_known_Address + "<br><br><b>Contact Information:  <br>" + props.Last_Known_Contact_Name + "<br></b>" + props.Phone + "<br>" + props.Email + "<br>" + props.Web +
-               "<br>Status:  <font color='red'><b>" + props.Status__2023_ + "</p></p>";
-               layer.bindPopup(locationPopup);
-            }
-        }).addTo(map);
-
-        var kypproductsLayer = L.geoJson(data, {
-          filter: kypproductsFilter,
-            pointToLayer: function(feature,latlng) {
-                return L.marker(latlng, {icon: kypproductsIcon});
-              },
-              onEachFeature : function(feature,layer) {
-                var props = feature.properties;
-                var locationPopup =
-                  "<h2>Data Source:<br>"+ props.Data_Source + "<br></h2>" + props.County + " County<br><br>" + "<b>" + props.Organization + "<br></b>"
-                  + props.Last_known_Address + "<br><br><b>Contact Information:  <br>" + props.Last_Known_Contact_Name + "<br></b>" + props.Phone + "<br>" + props.Email + "<br>" + props.Web +
-                  "<br>Status:  <font color='red'><b>" + props.Status__2023_ + "</p></p>";
-                  layer.bindPopup(locationPopup);
+                "<h2>" + props.Data_Type + "</h2><b>" + props.Amount + "</b> inches Recorded<br><br><b>" + props.Time + "</b> on <b>" + props.Date + "</b><br>Location: <b>"
+                + props.Town + "</b>";
+                layer.bindPopup(locationPopup);
               }
-          }).addTo(map);
+    }).addTo(map);
 
-              var kgadirectoryLayer = L.geoJson(data, {
-                filter: kgadirectoryFilter,
-                  pointToLayer: function(feature,latlng) {
-                      return L.marker(latlng, {icon: kgadirectoryIcon});
-                    },
-                    onEachFeature : function(feature,layer) {
-                      var props = feature.properties;
-                      var locationPopup =
-                        "<h2>Data Source:<br>"+ props.Data_Source + "<br></h2>" + props.County + " County<br><br>" + "<b>" + props.Organization + "<br></b>"
-                        + props.Last_known_Address + "<br><br><b>Contact Information:  <br>" + props.Last_Known_Contact_Name + "<br></b>" + props.Phone + "<br>" + props.Email + "<br>" + props.Web +
-                        "<br>Status:  <font color='red'><b>" + props.Status__2023_ + "</p></p>";
-                        layer.bindPopup(locationPopup);
-                    }
-                }).addTo(map);
+    var intenseRainEventLayer = L.geoJson(data, {
+        filter: intenseRainEventFilter,
+        pointToLayer: function(feature,latlng) {
+            return L.marker(latlng, {icon: intenseRainEventIcon});
+          },
+          onEachFeature : function(feature,layer) {
+            var props = feature.properties;
+            var locationPopup =
+              "<h2>" + props.Data_Type + "</h2><b>" + props.Amount + "</b> inches Recorded<br><br><b>" + props.Time + "</b> on <b>" + props.Date + "</b><br>Location: <b>"
+              + props.Town + "</b>";
+              layer.bindPopup(locationPopup);
+            }
+      }).addTo(map);
+
+    var moderateRainEventLayer = L.geoJson(data, {
+          filter: moderateRainEventFilter,
+          pointToLayer: function(feature,latlng) {
+              return L.marker(latlng, {icon: moderateRainEventIcon});
+            },
+            onEachFeature : function(feature,layer) {
+              var props = feature.properties;
+              var locationPopup =
+                "<h2>" + props.Data_Type + "</h2><b>" + props.Amount + "</b> inches Recorded<br><br><b>" + props.Time + "</b> on <b>" + props.Date + "</b><br>Location: <b>"
+                + props.Town + "</b>";
+                layer.bindPopup(locationPopup);
+              }
+    }).addTo(map);
+
+    var rainEventLayer = L.geoJson(data, {
+        filter: rainEventFilter,
+        pointToLayer: function(feature,latlng) {
+            return L.marker(latlng, {icon: rainEventIcon});
+          },
+          onEachFeature : function(feature,layer) {
+            var props = feature.properties;
+            var locationPopup =
+              "<h2>" + props.Data_Type + "</h2><b>" + props.Amount + "</b> inches Recorded<br><br><b>" + props.Time + "</b> on <b>" + props.Date + "</b><br>Location: <b>"
+              + props.Town + "</b>";
+              layer.bindPopup(locationPopup);
+            }
+      }).addTo(map);
 
     // create object of all layers
     var geoJsonLayers = {
-          kypgrowerLayer: kypgrowerLayer,
-          kypproductsLayer: kypproductsLayer,
-          kynurserylicenseLayer: kynurserylicenseLayer,
-          koapLayer: koapLayer,
-          agffaLayer: agffaLayer,
-          kgadirectoryLayer: kgadirectoryLayer,
+          extremeRainEventLayer: extremeRainEventLayer,
+          severeRainEventLayer: severeRainEventLayer,
+          heavyRainEventLayer: heavyRainEventLayer,
+          intenseRainEventLayer: intenseRainEventLayer,
+          moderateRainEventLayer: moderateRainEventLayer,
+          rainEventLayer: rainEventLayer,
     };
 
     var baseMaps = {
@@ -440,12 +431,12 @@
 
     // legend for turning on/off layers
     var sourcesLabels = {
-      "<img src='icons/kynurserylicense.png' height='20' width='20'><b>&nbsp;Kentucky Nursery Licenses 2021</b>": geoJsonLayers.kynurserylicenseLayer,
-      "<img src='icons/kypgrowericon.png' height='20' width='20'><b>&nbsp;Kentucky Proud Greenhouse Growers 2021</b>": geoJsonLayers.kypgrowerLayer,
-      "<img src='icons/kypproducts.png' height='20' width='20'><b>&nbsp;Kentucky Proud Greenhouse Products 2021</b>": geoJsonLayers.kypproductsLayer,
-      "<img src='icons/agffa.png' height='20' width='20'><b>&nbsp;Ag FFA Instructors, POWER counties</b>": geoJsonLayers.agffaLayer,
-      "<img src='icons/koap.png' height='20' width='20'><b>&nbsp;Shared KOAP Open Record Request Greenhouses</b><br>": geoJsonLayers.koapLayer,
-      "<img src='icons/kgadirectory.png' height='20' width='20'><b>&nbsp;KGA Commercial Directory</b>": geoJsonLayers.kgadirectoryLayer,
+      "<img src='icons/extremeRainEventicon.png' height='20' width='20'><b>&nbsp;Extreme - above 6 in</b>": geoJsonLayers.extremeRainEventLayer,
+      "<img src='icons/severeRainEventicon.png' height='20' width='20'><b>&nbsp;Severe - 5-6 in</b>": geoJsonLayers.severeRainEventLayer,
+      "<img src='icons/heavyRainEventicon.png' height='20' width='20'><b>&nbsp;Heavy - 4-5 in</b>": geoJsonLayers.heavyRainEventLayer,
+      "<img src='icons/intenseRainEventicon.png' height='20' width='20'><b>&nbsp;Intense - 2.5-4 in</b>": geoJsonLayers.intenseRainEventLayer,
+      "<img src='icons/moderateRainEventicon.png' height='20' width='20'><b>&nbsp;Moderate - 1-2.5 in in</b>": geoJsonLayers.moderateRainEventLayer,
+      "<img src='icons/rainEventicon.png' height='20' width='20'><b>&nbsp;Rain Event - below 1 in</b>": geoJsonLayers.rainEventLayer,
     };
 
     L.control.layers(baseMaps, sourcesLabels, { collapsed:true }).addTo(map);
@@ -473,30 +464,24 @@
 
 
     // filtering functions for creating multiple layers from single geojson
-    function kypgrowerFilter(feature) {
-      if (feature.properties.Data_Source === "Kentucky Proud Greenhouse Growers 2021") return true
+    function extremeRainEventFilter(feature) {
+      if (feature.properties.Data_Type === "Extreme Rain") return true
     }
-
-    function kynurserylicenseFilter(feature) {
-      if (feature.properties.Data_Source === "Kentucky Nursery Licenses 2021-2022") return true
+    function severeRainEventFilter(feature) {
+      if (feature.properties.Data_Type === "Severe Rain") return true
     }
-
-    function agffaFilter(feature) {
-      if (feature.properties.Data_Source === "Ag FFA Instructors, POWER counties") return true
+    function heavyRainEventFilter(feature) {
+      if (feature.properties.Data_Type === "Heavy Rain") return true
     }
-
-    function koapFilter(feature) {
-      if (feature.properties.Data_Source === "KOAP Open Record Req. GHs") return true
+    function intenseRainEventFilter(feature) {
+      if (feature.properties.Data_Type === "Intense Rain") return true
     }
-
-    function kypproductsFilter(feature) {
-      if (feature.properties.Data_Source === "Kentucky Proud Greenhouse Products 2021") return true
+    function moderateRainEventFilter(feature) {
+      if (feature.properties.Data_Type === "Moderate Rain") return true
     }
-
-    function kgadirectoryFilter(feature) {
-      if (feature.properties.Data_Source === "KGA Commercial Directory") return true
+    function rainEventFilter(feature) {
+      if (feature.properties.Data_Type === "Rain") return true
     }
-
   } // end drawMap()
 
   function addDataToMap(data, style, map) {

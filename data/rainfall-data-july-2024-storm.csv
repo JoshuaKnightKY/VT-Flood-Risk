@@ -1,0 +1,284 @@
+﻿LAT,LON,Data_Type,Date,Time,State,County,Town,??,Direction,,,Category,Amount,Measurement,Source,Summary
+44.43,-72.23,Extreme Rain,07/11/24,1137 AM,VT,Caledonia,Walden,,,,,RAIN,7.25,Inch,Public,Storm Total Rainfall
+44.40104,-72.23,Extreme Rain,07/11/24,1137 AM,VT,Washington,Walden,2,S,,,RAIN,7.1,Inch,Public,Storm Total Rainfall
+44.34,-73.11,Extreme Rain,07/11/24,1155 AM,VT,Chittenden,Mechanicsville,,,,,RAIN,6.91,Inch,Public,Storm Total Rainfall
+44.33,-73.11,Extreme Rain,07/11/24,548 AM,VT,Chittenden,Hinesburg,,,,,RAIN,6.76,Inch,Public,Storm Total Rainfall
+44.23,-73.15,Extreme Rain,07/11/24,1153 AM,VT,Addison,Monkton,,,,,RAIN,6.41,Inch,Public,Storm Total Rainfall
+44.4644,-71.99,Extreme Rain,07/11/24,700 AM,VT,Caledonia,St. Johnsbury,,,,,RAIN,6.4,Inch,Mesonet,Storm Total Rainfall
+44.2803,-72.7565,Extreme Rain,07/11/24,800 AM,VT,Washington,Moretown,2,N,,,RAIN,6,Inch,CoCoRaHS,Storm Total Rainfall
+44.2446,-72.9709,Severe Rain,07/11/24,900 AM,VT,Addison,Starksboro,4,ENE,,,RAIN,5.89,Inch,CoCoRaHS,Storm Total Rainfall
+44.3051,-72.7904,Severe Rain,07/11/24,700 AM,VT,Washington,Duxbury,3,SW,,,RAIN,5.85,Inch,CoCoRaHS,Storm Total Rainfall
+44.3166,-73.1353,Severe Rain,07/11/24,700 AM,VT,Chittenden,Hinesburg,2,SW,,,RAIN,5.82,Inch,CoCoRaHS,Storm Total Rainfall
+44.41,-72.99,Severe Rain,07/11/24,546 AM,VT,Chittenden,Richmond,1,NE,,,RAIN,5.79,Inch,Public,Storm Total Rainfall
+44.4242,-72.0219,Severe Rain,07/11/24,700 AM,VT,Caledonia,St. Johnsbury,,N,,,RAIN,5.69,Inch,CoCoRaHS,Storm Total Rainfall
+44.2676,-73.0994,Severe Rain,07/11/24,615 AM,VT,Addison,Monkton,2,NE,,,RAIN,5.62,Inch,CoCoRaHS,Storm Total Rainfall
+44.3906,-73.0212,Severe Rain,07/11/24,710 AM,VT,Chittenden,Richmond,2,SW,,,RAIN,5.51,Inch,CoCoRaHS,Storm Total Rainfall
+44.3414,-73.1117,Severe Rain,07/11/24,631 AM,VT,Chittenden,Hinesburg,1,N,,,RAIN,5.5,Inch,CoCoRaHS,Storm Total Rainfall
+44.22,-72.85,Severe Rain,07/11/24,701 AM,VT,Washington,North Fayston,2,SSW,,,RAIN,5.5,Inch,Public,Storm Total Rainfall
+44.09,-73.39,Severe Rain,07/11/24,601 AM,VT,Addison,Goodrich Corner,1,SW,,,RAIN,5.39,Inch,Public,Storm Total Rainfall
+44.3121,-73.2317,Severe Rain,07/11/24,700 AM,VT,Chittenden,Charlotte,1,E,,,RAIN,5.39,Inch,CoCoRaHS,Storm Total Rainfall
+44.48,-72.24,Severe Rain,07/11/24,1136 AM,VT,Caledonia,Goslants Mill,1,NW,,,RAIN,5.32,Inch,Public,Storm Total Rainfall
+44.51,-72.24,Severe Rain,07/11/24,1137 AM,VT,Caledonia,North Walden,1,ENE,,,RAIN,5.29,Inch,Public,Storm Total Rainfall
+44.5,-72.22,Severe Rain,07/11/24,1013 AM,VT,Caledonia,Stannard,2,S,,,RAIN,5.27,Inch,Public,Storm Total Rainfall
+44.1794,-73.3709,Severe Rain,07/11/24,700 AM,VT,Addison,Vergennes,6,W,,,RAIN,5.26,Inch,CoCoRaHS,Storm Total Rainfall
+44.14674,-73.06663,Severe Rain,07/11/24,936 AM,VT,Addison,Bristol,1,NE,,,RAIN,5.18,Inch,Public,Storm Total Rainfall
+44.3,-73.25,Severe Rain,07/10/24,1100 PM,VT,Chittenden,Charlotte,,,,,RAIN,5.18,Inch,Public,Storm Total Rainfall
+44.2747,-72.7531,Severe Rain,07/11/24,700 AM,VT,Washington,Moretown,,,,,RAIN,5.18,Inch,Mesonet,Storm Total Rainfall
+44.55,-72.11,Severe Rain,07/11/24,1136 AM,VT,Caledonia,South Wheelock,,,,,RAIN,5.15,Inch,Public,Storm Total Rainfall
+44.3002,-72.1195,Severe Rain,07/11/24,625 AM,VT,Caledonia,Barnet,4,W,,,RAIN,5.15,Inch,CoCoRaHS,Storm Total Rainfall
+44.4177,-72.1394,Severe Rain,07/11/24,700 AM,VT,Caledonia,Danville,,N,,,RAIN,5.12,Inch,CoCoRaHS,Storm Total Rainfall
+44.1695,-73.0213,Severe Rain,07/11/24,820 AM,VT,Addison,STARKSBORO,,,,,RAIN,5.11,Inch,CWOP,Storm Total Rainfall
+44.1696,-73.0182,Severe Rain,07/11/24,700 AM,VT,Addison,Bristol,4,NE,,,RAIN,5.11,Inch,CoCoRaHS,Storm Total Rainfall
+44.2442,-72.7658,Severe Rain,07/11/24,820 AM,VT,Washington,Waitsfield,4,NE,,,RAIN,5.04,Inch,AWS,Storm Total Rainfall
+44.34,-72.75,Severe Rain,07/11/24,703 AM,VT,Washington,Waterbury,,,,,RAIN,5.03,Inch,Public,Storm Total Rainfall
+44.84,-72.03,Severe Rain,07/11/24,1155 AM,VT,Orleans,East Charleston,2,WNW,,,RAIN,5.02,Inch,Public,Storm Total Rainfall
+44.4497,-72.9264,Heavy Rain,07/11/24,645 AM,VT,Chittenden,Nashville,1,E,,,RAIN,4.91,Inch,Co-Op Observer,Storm Total Rainfall
+44.41,-72.01,Heavy Rain,07/11/24,721 AM,VT,Caledonia,Saint Johnsbury,1,SSE,,,RAIN,4.86,Inch,Public,Storm Total Rainfall
+44.1841,-73.1201,Heavy Rain,07/11/24,800 AM,VT,Addison,Monkton,3,SE,,,RAIN,4.85,Inch,CoCoRaHS,Storm Total Rainfall
+44.4,-73,Heavy Rain,07/11/24,500 AM,VT,Chittenden,Richmond,,,,,RAIN,4.85,Inch,Public,Storm Total Rainfall
+44.4171,-72.235,Heavy Rain,07/11/24,700 AM,VT,Washington,Cabot,4,ENE,,,RAIN,4.81,Inch,CoCoRaHS,Storm Total Rainfall
+44.6541,-71.6391,Heavy Rain,07/11/24,833 AM,VT,Essex,Maidstone State Park,,,,,RAIN,4.8,Inch,Public,Storm Total Rainfall
+44.3715,-72.7022,Heavy Rain,07/11/24,700 AM,VT,Washington,Waterbury,4,NE,,,RAIN,4.8,Inch,CoCoRaHS,Storm Total Rainfall
+44.4029,-72.4319,Heavy Rain,07/11/24,550 AM,VT,Washington,Calais,2,N,,,RAIN,4.8,Inch,Trained Spotter,Storm Total Rainfall
+44.2462,-72.7419,Heavy Rain,07/11/24,600 AM,VT,Washington,Moretown,1,ESE,,,RAIN,4.8,Inch,CoCoRaHS,Storm Total Rainfall
+44.15697,-73.05236,Heavy Rain,07/11/24,952 AM,VT,Addison,Bristol,2,NE,,,RAIN,4.76,Inch,Public,Storm Total Rainfall
+44.41,-72.14,Heavy Rain,07/11/24,721 AM,VT,Caledonia,Danville,1,SW,,,RAIN,4.75,Inch,Public,Storm Total Rainfall
+44.4111,-72.1392,Heavy Rain,07/11/24,700 AM,VT,Caledonia,Danville,,,,,RAIN,4.7,Inch,Mesonet,Storm Total Rainfall
+44.2,-72.5,Heavy Rain,07/11/24,706 AM,VT,Washington,Barre,,,,,RAIN,4.7,Inch,Public,Storm Total Rainfall
+44.17,-73.02,Heavy Rain,07/11/24,601 AM,VT,Addison,South Starksboro,1,NNW,,,RAIN,4.64,Inch,Public,Storm Total Rainfall
+44.5442,-72.5092,Heavy Rain,07/11/24,700 AM,VT,Lamoille,Wolcott,2,WSW,,,RAIN,4.58,Inch,CoCoRaHS,Storm Total Rainfall
+44.91366,-72.01426,Heavy Rain,07/11/24,825 AM,VT,Orleans,Morgan,,,,,RAIN,4.58,Inch,Trained Spotter,Storm Total Rainfall
+44.2761,-72.415,Heavy Rain,07/11/24,700 AM,VT,Washington,Plainfield,1,ESE,,,RAIN,4.57,Inch,Co-Op Observer,Storm Total Rainfall
+44.7497,-71.6317,Heavy Rain,07/11/24,815 AM,VT,Essex,Connecticut River At North,,,,,RAIN,4.55,Inch,MESOWEST,Storm Total Rainfall
+44.22,-73.25,Heavy Rain,07/11/24,600 AM,VT,Addison,Ferrisburgh,1,N,,,RAIN,4.54,Inch,Public,Storm Total Rainfall
+44.3978,-72.2656,Heavy Rain,07/11/24,700 AM,VT,Washington,Cabot,,,,,RAIN,4.54,Inch,Mesonet,Storm Total Rainfall
+44.24,-72.77,Heavy Rain,07/11/24,702 AM,VT,Washington,South Duxbury,1,SE,,,RAIN,4.53,Inch,Public,Storm Total Rainfall
+44.1402,-73.0872,Heavy Rain,07/11/24,645 AM,VT,Addison,Bristol,,,,,RAIN,4.52,Inch,Co-Op Observer,Storm Total Rainfall
+44.39006,-72.4465,Heavy Rain,07/11/24,605 AM,VT,Washington,North Calais,,,,,RAIN,4.5,Inch,Public,Storm Total Rainfall
+44.3458,-72.5608,Heavy Rain,07/11/24,530 AM,VT,Washington,Middlesex,7,NE,,,RAIN,4.5,Inch,CoCoRaHS,Storm Total Rainfall
+44.3663,-73.0153,Heavy Rain,07/11/24,815 AM,VT,Chittenden,RICHMOND,,,,,RAIN,4.49,Inch,CWOP,Storm Total Rainfall
+44.292,-72.5797,Heavy Rain,07/11/24,815 AM,VT,Washington,MONTPELIER,,,,,RAIN,4.46,Inch,CWOP,Storm Total Rainfall
+44.68,-72.92,Heavy Rain,07/11/24,937 AM,VT,Franklin,Fletcher,,,,,RAIN,4.45,Inch,Public,Storm Total Rainfall
+44.5649,-72.0883,Heavy Rain,07/11/24,700 AM,VT,Caledonia,Wheelock,2,S,,,RAIN,4.44,Inch,CoCoRaHS,Storm Total Rainfall
+44.6122,-72.0481,Heavy Rain,07/11/24,750 AM,VT,Caledonia,Sutton,,,,,RAIN,4.43,Inch,Co-Op Observer,Storm Total Rainfall
+44.3606,-72.8077,Heavy Rain,07/11/24,600 AM,VT,Washington,Waterbury,3,NW,,,RAIN,4.4,Inch,CoCoRaHS,Storm Total Rainfall
+44.3981,-72.2657,Heavy Rain,07/11/24,700 AM,VT,Washington,Cabot,2,E,,,RAIN,4.39,Inch,CoCoRaHS,Storm Total Rainfall
+44.1719,-73.2472,Heavy Rain,07/11/24,616 AM,VT,Addison,Vergennes,,,,,RAIN,4.35,Inch,Co-Op Observer,Storm Total Rainfall
+44.6317,-72.1703,Heavy Rain,07/11/24,700 AM,VT,Caledonia,Sheffield,3,NW,,,RAIN,4.35,Inch,CoCoRaHS,Storm Total Rainfall
+44.36,-73.25,Heavy Rain,07/11/24,548 AM,VT,Chittenden,Shelburne,2,SW,,,RAIN,4.35,Inch,Public,Storm Total Rainfall
+44.88,-72.41,Heavy Rain,07/11/24,725 AM,VT,Orleans,Westfield,,,,,RAIN,4.34,Inch,Public,Storm Total Rainfall
+44.5025,-72.5556,Heavy Rain,07/11/24,700 AM,VT,Lamoille,Elmore,,,,,RAIN,4.33,Inch,Mesonet,Storm Total Rainfall
+44.35,-72.13,Heavy Rain,07/11/24,720 AM,VT,Caledonia,East Peacham,2,ENE,,,RAIN,4.32,Inch,Public,Storm Total Rainfall
+44.8553,-71.9067,Heavy Rain,07/11/24,500 AM,VT,Orleans,Morgan,7,SE,,,RAIN,4.3,Inch,CoCoRaHS,Storm Total Rainfall
+44.3065,-73.0052,Heavy Rain,07/11/24,700 AM,VT,Chittenden,Huntington,2,SW,,,RAIN,4.29,Inch,CoCoRaHS,Storm Total Rainfall
+44.4576,-72.4267,Heavy Rain,07/11/24,800 AM,VT,Washington,Woodbury,1,NNW,,,RAIN,4.29,Inch,CoCoRaHS,Storm Total Rainfall
+44.26,-72.96,Heavy Rain,07/11/24,547 AM,VT,Chittenden,Hanksville,1,N,,,RAIN,4.28,Inch,Public,Storm Total Rainfall
+44.4122,-72.1001,Heavy Rain,07/11/24,610 AM,VT,Caledonia,Danville,2,E,,,RAIN,4.27,Inch,CoCoRaHS,Storm Total Rainfall
+44.51589,-71.93898,Heavy Rain,07/11/24,1031 AM,VT,Caledonia,North Kirby,,,,,RAIN,4.25,Inch,Public,Storm Total Rainfall
+44.65,-71.97,Heavy Rain,07/11/24,722 AM,VT,Caledonia,West Burke,1,NE,,,RAIN,4.22,Inch,Public,Storm Total Rainfall
+44.3678,-73.1963,Heavy Rain,07/11/24,818 AM,VT,Chittenden,SHELBURNE,,,,,RAIN,4.22,Inch,CWOP,Storm Total Rainfall
+44.4019,-72.3164,Heavy Rain,07/11/24,700 AM,VT,Caledonia,Cabot,,,,,RAIN,4.2,Inch,Mesonet,Storm Total Rainfall
+44.464,-72.6907,Heavy Rain,07/11/24,730 AM,VT,Lamoille,Stowe,,SW,,,RAIN,4.17,Inch,CoCoRaHS,Storm Total Rainfall
+44.6634,-72.3925,Heavy Rain,07/11/24,600 AM,VT,Orleans,Craftsbury Common,,,,,RAIN,4.17,Inch,CoCoRaHS,Storm Total Rainfall
+44.4455,-71.8197,Heavy Rain,07/11/24,700 AM,VT,Essex,North Concord,2,SE,,,RAIN,4.15,Inch,CoCoRaHS,Storm Total Rainfall
+44.5358,-72.0287,Heavy Rain,07/11/24,700 AM,VT,Caledonia,Lyndonville,1,W,,,RAIN,4.14,Inch,CoCoRaHS,Storm Total Rainfall
+44.17,-72.39,Heavy Rain,07/11/24,659 AM,VT,Orange,Orange,1,NNE,,,RAIN,4.13,Inch,Public,Storm Total Rainfall
+44.3667,-72.5417,Heavy Rain,07/11/24,818 AM,VT,Washington,Worcester,,,,,RAIN,4.11,Inch,CWOP,Storm Total Rainfall
+44.38,-73.23,Heavy Rain,07/11/24,636 AM,VT,Chittenden,Shelburne,,,,,RAIN,4.1,Inch,Trained Spotter,Storm Total Rainfall
+44.3249,-72.9657,Heavy Rain,07/11/24,600 AM,VT,Chittenden,Huntington,1,E,,,RAIN,4.08,Inch,CoCoRaHS,Storm Total Rainfall
+44.6053,-72.3094,Heavy Rain,07/11/24,700 AM,VT,Orleans,Greensboro,2,NNW,,,RAIN,4.07,Inch,CoCoRaHS,Storm Total Rainfall
+44.27,-72.64,Heavy Rain,07/11/24,702 AM,VT,Washington,Montpelier Junction,2,WNW,,,RAIN,4.06,Inch,Public,Storm Total Rainfall
+44.4883,-72.4326,Heavy Rain,07/11/24,700 AM,VT,Washington,Woodbury,3,NNW,,,RAIN,4.04,Inch,CoCoRaHS,Storm Total Rainfall
+44.4495,-72.925,Intense Rain,07/10/24,1103 PM,VT,Chittenden,Jericho,,,,,RAIN,3.97,Inch,CWOP,Storm Total Rainfall
+44.8128,-71.8902,Intense Rain,07/11/24,840 AM,VT,Essex,Island Pond,,,,,RAIN,3.96,Inch,Co-Op Observer,Storm Total Rainfall
+44.52,-71.99,Intense Rain,07/11/24,722 AM,VT,Caledonia,Lyndon,1,ENE,,,RAIN,3.95,Inch,Public,Storm Total Rainfall
+44.4993,-72.698,Intense Rain,07/11/24,800 AM,VT,Lamoille,Stowe,2,NNW,,,RAIN,3.95,Inch,CoCoRaHS,Storm Total Rainfall
+44.7567,-72.0723,Intense Rain,07/11/24,800 AM,VT,Orleans,Westmore,1,SW,,,RAIN,3.94,Inch,CoCoRaHS,Storm Total Rainfall
+44.79,-72.02,Intense Rain,07/11/24,727 AM,VT,Orleans,Westmore,2,NE,,,RAIN,3.94,Inch,Public,Storm Total Rainfall
+44.96,-71.59,Intense Rain,07/11/24,723 AM,VT,Essex,Wallace Pond,4,SSE,,,RAIN,3.92,Inch,Public,Storm Total Rainfall
+44.8916,-72.4435,Intense Rain,07/11/24,700 AM,VT,Orleans,Westfield,1,WNW,,,RAIN,3.91,Inch,CoCoRaHS,Storm Total Rainfall
+44.28,-72.42,Intense Rain,07/11/24,706 AM,VT,Washington,Plainfield,,,,,RAIN,3.89,Inch,Public,Storm Total Rainfall
+44.12,-72.6,Intense Rain,07/11/24,700 AM,VT,Orange,South Northfield,3,E,,,RAIN,3.88,Inch,Public,Storm Total Rainfall
+44.3949,-73.0932,Intense Rain,07/11/24,600 AM,VT,Chittenden,Williston,3,SSW,,,RAIN,3.86,Inch,CoCoRaHS,Storm Total Rainfall
+44.6425,-71.8912,Intense Rain,07/11/24,700 AM,VT,Essex,East Haven,1,S,,,RAIN,3.85,Inch,Co-Op Observer,Storm Total Rainfall
+44.20278,-72.87639,Intense Rain,07/11/24,700 AM,VT,Washington,Fayston,,,,,RAIN,3.81,Inch,Mesonet,Storm Total Rainfall
+44.8341,-72.3201,Intense Rain,07/11/24,700 AM,VT,Orleans,Irasburg,3,NW,,,RAIN,3.79,Inch,CoCoRaHS,Storm Total Rainfall
+44.79,-71.79,Intense Rain,07/11/24,723 AM,VT,Essex,East Brighton,1,ENE,,,RAIN,3.75,Inch,Public,Storm Total Rainfall
+44.0875,-73.3218,Intense Rain,07/11/24,815 AM,VT,Addison,Addison,,,,,RAIN,3.7,Inch,CWOP,Storm Total Rainfall
+44.7,-72.55,Intense Rain,07/11/24,911 AM,VT,Lamoille,Eden,,,,,RAIN,3.7,Inch,Trained Spotter,Storm Total Rainfall
+44.4932,-71.7045,Intense Rain,07/11/24,600 AM,VT,Essex,Lunenburg,2,NNW,,,RAIN,3.66,Inch,CoCoRaHS,Storm Total Rainfall
+44.1944,-72.2824,Intense Rain,07/11/24,500 AM,VT,Caledonia,Groton,4,WSW,,,RAIN,3.63,Inch,CoCoRaHS,Storm Total Rainfall
+44.7,-73.13,Intense Rain,07/11/24,541 AM,VT,Franklin,West Georgia,1,E,,,RAIN,3.63,Inch,Public,Storm Total Rainfall
+44.3747,-72.5822,Intense Rain,07/11/24,700 AM,VT,Washington,Worcester,2,W,,,RAIN,3.62,Inch,Co-Op Observer,Storm Total Rainfall
+44.4708,-71.7256,Intense Rain,07/11/24,700 AM,VT,Essex,West Lunenburg,,,,,RAIN,3.55,Inch,Mesonet,Storm Total Rainfall
+44.631,-72.28,Intense Rain,07/11/24,500 AM,VT,Orleans,Greensboro,4,NNE,,,RAIN,3.54,Inch,CoCoRaHS,Storm Total Rainfall
+44.3826,-73.2177,Intense Rain,07/11/24,700 AM,VT,Chittenden,Shelburne,1,ENE,,,RAIN,3.51,Inch,CoCoRaHS,Storm Total Rainfall
+44.6653,-73.0088,Intense Rain,07/11/24,900 AM,VT,Franklin,Fairfax,5,WNW,,,RAIN,3.47,Inch,CoCoRaHS,Storm Total Rainfall
+44.1756,-72.7961,Intense Rain,07/11/24,600 AM,VT,Washington,Waitsfield,2,SE,,,RAIN,3.44,Inch,Co-Op Observer,Storm Total Rainfall
+44.9306,-72.2373,Intense Rain,07/11/24,700 AM,VT,Orleans,Newport,2,WSW,,,RAIN,3.43,Inch,CoCoRaHS,Storm Total Rainfall
+44.2142,-72.6636,Intense Rain,07/11/24,700 AM,VT,Washington,Berlin,,,,,RAIN,3.42,Inch,Mesonet,Storm Total Rainfall
+44.8766,-72.5623,Intense Rain,07/11/24,700 AM,VT,Franklin,Montgomery,4,ESE,,,RAIN,3.4,Inch,CoCoRaHS,Storm Total Rainfall
+44.56472,-72.08806,Intense Rain,07/11/24,700 AM,VT,Caledonia,Wheelock,,,,,RAIN,3.36,Inch,Mesonet,Storm Total Rainfall
+44.5092,-71.7153,Intense Rain,07/11/24,700 AM,VT,Essex,Lunenburg,,,,,RAIN,3.32,Inch,Mesonet,Storm Total Rainfall
+44.1886,-72.8114,Intense Rain,07/11/24,700 AM,VT,Washington,Waitsfield,,,,,RAIN,3.31,Inch,Mesonet,Storm Total Rainfall
+44.6384,-73.1125,Intense Rain,07/11/24,1023 AM,VT,Chittenden,Milton,,,,,RAIN,3.25,Inch,Public,Storm Total Rainfall
+44.2039,-73.3556,Intense Rain,07/11/24,700 AM,VT,Addison,Ferrisburg,,,,,RAIN,3.24,Inch,Mesonet,Storm Total Rainfall
+44.5503,-72.5741,Intense Rain,07/11/24,732 AM,VT,Lamoille,Morrisville,1,ESE,,,RAIN,3.22,Inch,CoCoRaHS,Storm Total Rainfall
+44.6147,-72.3863,Intense Rain,07/11/24,700 AM,VT,Orleans,Craftsbury,2,SSW,,,RAIN,3.22,Inch,CoCoRaHS,Storm Total Rainfall
+44.5011,-72.8811,Intense Rain,07/11/24,700 AM,VT,Chittenden,Underhill,4,ESE,,,RAIN,3.2,Inch,CoCoRaHS,Storm Total Rainfall
+44.85,-72.16,Intense Rain,07/11/24,726 AM,VT,Orleans,Brownington Village,1,NNE,,,RAIN,3.2,Inch,Public,Storm Total Rainfall
+44.18,-72.82,Intense Rain,07/11/24,714 AM,VT,Washington,Waitsfield,1,SSE,,,RAIN,3.18,Inch,CoCoRaHS,Storm Total Rainfall
+44.06,-73.17,Intense Rain,07/11/24,603 AM,VT,Addison,Brooksville,,,,,RAIN,3.17,Inch,Public,Storm Total Rainfall
+44.94,-72.14,Intense Rain,07/11/24,1155 AM,VT,Orleans,Derby Center,1,SSW,,,RAIN,3.16,Inch,Public,Storm Total Rainfall
+44.2131,-72.3989,Intense Rain,07/11/24,700 AM,VT,Orange,Orange,,,,,RAIN,3.11,Inch,Mesonet,Storm Total Rainfall
+44.7964,-72.8567,Intense Rain,07/11/24,700 AM,VT,Franklin,East Fairfield,,,,,RAIN,3.1,Inch,Mesonet,Storm Total Rainfall
+44.17,-72.79,Intense Rain,07/11/24,701 AM,VT,Washington,Waitsfield Common,1,SSE,,,RAIN,3.09,Inch,Public,Storm Total Rainfall
+44.73,-72.4,Intense Rain,07/11/24,725 AM,VT,Orleans,Albany,1,W,,,RAIN,3.04,Inch,Public,Storm Total Rainfall
+44.4655,-72.975,Intense Rain,07/11/24,817 AM,VT,Chittenden,JERICHO,,,,,RAIN,3.01,Inch,CWOP,Storm Total Rainfall
+44.21,-72.5131,Intense Rain,07/11/24,700 AM,VT,Washington,North Barre,,,,,RAIN,3.01,Inch,Mesonet,Storm Total Rainfall
+44.2,-72.5667,Intense Rain,07/11/24,751 AM,VT,Washington,Montpelier Airport,,,,,RAIN,2.98,Inch,ASOS,Storm Total Rainfall
+44.6494,-71.9683,Intense Rain,07/11/24,700 AM,VT,Caledonia,West Burke,,,,,RAIN,2.97,Inch,Mesonet,Storm Total Rainfall
+44.98,-71.96,Intense Rain,07/11/24,727 AM,VT,Orleans,Holland,2,ENE,,,RAIN,2.91,Inch,Public,Storm Total Rainfall
+44.66,-73.12,Intense Rain,07/11/24,544 AM,VT,Chittenden,Milton,2,NNW,,,RAIN,2.89,Inch,Public,Storm Total Rainfall
+44.2302,-72.1052,Intense Rain,07/11/24,646 AM,VT,Caledonia,Wells River,2,WNW,,,RAIN,2.88,Inch,CoCoRaHS,Storm Total Rainfall
+43.6222,-72.7594,Intense Rain,07/11/24,730 AM,VT,Rutland,West Bridgewater,2,NW,,,RAIN,2.87,Inch,HADS,Storm Total Rainfall
+44.96,-72.21,Intense Rain,07/11/24,726 AM,VT,Orleans,Lindsay Beach,1,SW,,,RAIN,2.81,Inch,Public,Storm Total Rainfall
+44.2723,-72.5002,Intense Rain,07/11/24,700 AM,VT,Washington,East Montpelier,,,,,RAIN,2.76,Inch,CoCoRaHS,Storm Total Rainfall
+44.2435,-72.5676,Intense Rain,07/11/24,700 AM,VT,Washington,Montpelier,1,SSE,,,RAIN,2.75,Inch,CoCoRaHS,Storm Total Rainfall
+45,-72.41,Intense Rain,07/11/24,726 AM,VT,Orleans,North Troy,,,,,RAIN,2.74,Inch,Public,Storm Total Rainfall
+44.1649,-72.6471,Intense Rain,07/11/24,600 AM,VT,Washington,Northfield,1,NNE,,,RAIN,2.74,Inch,CoCoRaHS,Storm Total Rainfall
+44.1699,-72.652,Intense Rain,07/11/24,700 AM,VT,Washington,Northfield,2,N,,,RAIN,2.74,Inch,CoCoRaHS,Storm Total Rainfall
+44.2282,-72.5247,Intense Rain,07/11/24,815 AM,VT,Washington,BARRE,,,,,RAIN,2.74,Inch,CWOP,Storm Total Rainfall
+44.47,-71.73,Intense Rain,07/11/24,722 AM,VT,Essex,Baptist Hill,2,N,,,RAIN,2.72,Inch,Public,Storm Total Rainfall
+44.57,-73.24,Intense Rain,07/11/24,545 AM,VT,Chittenden,Thayer Beach,2,NE,,,RAIN,2.69,Inch,Public,Storm Total Rainfall
+44.92,-72.8,Intense Rain,07/11/24,541 AM,VT,Franklin,Enosburg Falls,1,NNE,,,RAIN,2.69,Inch,Public,Storm Total Rainfall
+44.64047,-73.04878,Intense Rain,07/11/24,943 AM,VT,Chittenden,Westford,2,NW,,,RAIN,2.63,Inch,NWS Employee,Storm Total Rainfall
+44.6353,-72.6942,Intense Rain,07/11/24,818 AM,VT,Lamoille,Johnson VTWAC),1,W,,,RAIN,2.61,Inch,MESOWEST,Storm Total Rainfall
+44.5088,-72.3649,Intense Rain,07/11/24,700 AM,VT,Lamoille,Hardwick,,,,,RAIN,2.61,Inch,Mesonet,Storm Total Rainfall
+44.94,-73.14,Intense Rain,07/11/24,540 AM,VT,Franklin,Swanton,2,NW,,,RAIN,2.6,Inch,Public,Storm Total Rainfall
+44.7017,-72.9061,Intense Rain,07/11/24,700 AM,VT,Lamoille,Fletcher,,,,,RAIN,2.6,Inch,Mesonet,Storm Total Rainfall
+44.7328,-72.4042,Intense Rain,07/11/24,700 AM,VT,Orleans,Albany,,,,,RAIN,2.6,Inch,Mesonet,Storm Total Rainfall
+44.7253,-73.308,Intense Rain,07/11/24,820 AM,VT,Grand Isle,Grand Isle,,,,,RAIN,2.56,Inch,CWOP,Storm Total Rainfall
+44.1121,-72.7989,Intense Rain,07/11/24,700 AM,VT,Washington,Warren,3,E,,,RAIN,2.56,Inch,CoCoRaHS,Storm Total Rainfall
+44.73,-73.31,Intense Rain,07/11/24,542 AM,VT,Grand Isle,Grand Isle,1,NW,,,RAIN,2.55,Inch,Public,Storm Total Rainfall
+44.4203,-73.1924,Intense Rain,07/11/24,640 AM,VT,Chittenden,South Burlington,3,SSW,,,RAIN,2.53,Inch,CoCoRaHS,Storm Total Rainfall
+44.9178,-72.7762,Intense Rain,07/11/24,819 AM,VT,Franklin,Enosburgh,,,,,RAIN,2.53,Inch,CWOP,Storm Total Rainfall
+44.4367,-73.0715,Intense Rain,07/11/24,700 AM,VT,Chittenden,Williston,,WSW,,,RAIN,2.51,Inch,CoCoRaHS,Storm Total Rainfall
+44.675,-72.921,Intense Rain,07/11/24,635 AM,VT,Franklin,Cambridge,3,NW,,,RAIN,2.51,Inch,CoCoRaHS,Storm Total Rainfall
+44.7258,-73.1183,Moderate Rain,07/11/24,820 AM,VT,Franklin,Georgia,,,,,RAIN,2.47,Inch,CWOP,Storm Total Rainfall
+44.7417,-72.4617,Moderate Rain,07/11/24,700 AM,VT,Orleans,Lowell,,,,,RAIN,2.45,Inch,Mesonet,Storm Total Rainfall
+44.8367,-72.1745,Moderate Rain,07/11/24,825 AM,VT,Orleans,Brownington,,,,,RAIN,2.43,Inch,Trained Spotter,Storm Total Rainfall
+45.0045,-72.1417,Moderate Rain,07/11/24,700 AM,VT,Orleans,Derby Line,2,W,,,RAIN,2.42,Inch,CoCoRaHS,Storm Total Rainfall
+44.4611,-73.1174,Moderate Rain,07/11/24,804 AM,VT,Chittenden,Williston,3,NW,,,RAIN,2.4,Inch,CoCoRaHS,Storm Total Rainfall
+44.81,-73.06,Moderate Rain,07/11/24,541 AM,VT,Franklin,Hill Farm Estates,,,,,RAIN,2.4,Inch,Public,Storm Total Rainfall
+44.9096,-72.8137,Moderate Rain,07/11/24,452 AM,VT,Franklin,Enosburg Falls,,,,,RAIN,2.39,Inch,Co-Op Observer,Storm Total Rainfall
+44.52588,-72.94513,Moderate Rain,07/11/24,600 AM,VT,Chittenden,Underhill,,,,,RAIN,2.38,Inch,Public,Storm Total Rainfall
+44.5505,-73.1967,Moderate Rain,07/11/24,814 AM,VT,Chittenden,Colchester,,,,,RAIN,2.38,Inch,CWOP,Storm Total Rainfall
+44.07,-72.96,Moderate Rain,07/11/24,603 AM,VT,Addison,South Lincoln,1,E,,,RAIN,2.37,Inch,Public,Storm Total Rainfall
+44.63,-73.02,Moderate Rain,07/11/24,545 AM,VT,Chittenden,Westford,1,N,,,RAIN,2.35,Inch,Public,Storm Total Rainfall
+44.5843,-72.787,Moderate Rain,07/11/24,730 AM,VT,Lamoille,Smugglers Notch,3,N,,,RAIN,2.35,Inch,Co-Op Observer,Storm Total Rainfall
+44.5589,-72.8592,Moderate Rain,07/11/24,700 AM,VT,Chittenden,Pleasant Valley,,,,,RAIN,2.3,Inch,Mesonet,Storm Total Rainfall
+44.8478,-73.2808,Moderate Rain,07/11/24,700 AM,VT,Grand Isle,North Hero,,,,,RAIN,2.28,Inch,Mesonet,Storm Total Rainfall
+44.1111,-72.8564,Moderate Rain,07/11/24,700 AM,VT,Washington,Warren,,,,,RAIN,2.28,Inch,Mesonet,Storm Total Rainfall
+44.66,-73.28,Moderate Rain,07/11/24,543 AM,VT,Grand Isle,Keeler Bay,2,E,,,RAIN,2.24,Inch,Public,Storm Total Rainfall
+44.9259,-73.1215,Moderate Rain,07/11/24,630 AM,VT,Franklin,Swanton,1,NNE,,,RAIN,2.23,Inch,CoCoRaHS,Storm Total Rainfall
+44.4458,-73.215,Moderate Rain,07/11/24,820 AM,VT,Chittenden,South Burlington,,,,,RAIN,2.21,Inch,AWS,Storm Total Rainfall
+43.6606,-72.8372,Moderate Rain,07/11/24,700 AM,VT,Rutland,Killington,,,,,RAIN,2.21,Inch,Mesonet,Storm Total Rainfall
+44.9797,-72.9219,Moderate Rain,07/11/24,820 AM,VT,Franklin,Franklin,,,,,RAIN,2.17,Inch,AWS,Storm Total Rainfall
+44.0746,-72.9718,Moderate Rain,07/11/24,700 AM,VT,Addison,South Lincoln,1,NE,,,RAIN,2.13,Inch,Co-Op Observer,Storm Total Rainfall
+44.0181,-73.1684,Moderate Rain,07/11/24,700 AM,VT,Addison,Middlebury,,N,,,RAIN,2.08,Inch,CoCoRaHS,Storm Total Rainfall
+44.888,-73.1671,Moderate Rain,07/11/24,702 AM,VT,Franklin,Swanton,3,SW,,,RAIN,2.07,Inch,CoCoRaHS,Storm Total Rainfall
+44.8083,-72.0083,Moderate Rain,07/11/24,700 AM,VT,Orleans,East Charleston,,,,,RAIN,2.06,Inch,Mesonet,Storm Total Rainfall
+44.8633,-73.0556,Moderate Rain,07/11/24,820 AM,VT,Franklin,Swanton Junction,2,ESE,,,RAIN,2.03,Inch,AWS,Storm Total Rainfall
+44.9447,-72.7969,Moderate Rain,07/11/24,700 AM,VT,Franklin,Enosburg Falls,3,N,,,RAIN,2,Inch,CoCoRaHS,Storm Total Rainfall
+43.7602,-73.195,Moderate Rain,07/11/24,700 AM,VT,Rutland,Sudbury,3,S,,,RAIN,2,Inch,CoCoRaHS,Storm Total Rainfall
+44.583,-73.1017,Moderate Rain,07/11/24,700 AM,VT,Chittenden,Milton,3,SSE,,,RAIN,1.99,Inch,CoCoRaHS,Storm Total Rainfall
+44.8856,-73.0419,Moderate Rain,07/11/24,820 AM,VT,Franklin,Highgate Falls,3,SSW,,,RAIN,1.98,Inch,AWS,Storm Total Rainfall
+44.0176,-73.1647,Moderate Rain,07/11/24,700 AM,VT,Addison,Middlebury,,NE,,,RAIN,1.96,Inch,CoCoRaHS,Storm Total Rainfall
+44.9631,-73.2517,Moderate Rain,07/11/24,815 AM,VT,Grand Isle,Alburgh,,,,,RAIN,1.92,Inch,CWOP,Storm Total Rainfall
+44.6467,-72.8942,Moderate Rain,07/11/24,700 AM,VT,Lamoille,Cambridge,,,,,RAIN,1.91,Inch,Mesonet,Storm Total Rainfall
+44.4667,-73.15,Moderate Rain,07/11/24,820 AM,VT,Chittenden,Burlington Intl Airport,,,,,RAIN,1.9,Inch,ASOS,Storm Total Rainfall
+44.7164,-72.7281,Moderate Rain,07/11/24,700 AM,VT,Lamoille,Waterville,,,,,RAIN,1.89,Inch,Mesonet,Storm Total Rainfall
+43.6233,-72.8772,Moderate Rain,07/11/24,700 AM,VT,Rutland,Mendon,,,,,RAIN,1.89,Inch,Mesonet,Storm Total Rainfall
+44.658,-72.6786,Moderate Rain,07/11/24,700 AM,VT,Lamoille,Johnson,2,N,,,RAIN,1.87,Inch,Co-Op Observer,Storm Total Rainfall
+44.54,-72.97,Moderate Rain,07/11/24,546 AM,VT,Chittenden,Underhill,2,NW,,,RAIN,1.8,Inch,Public,Storm Total Rainfall
+43.8494,-72.4117,Moderate Rain,07/11/24,700 AM,VT,Orange,Strafford,,,,,RAIN,1.75,Inch,Mesonet,Storm Total Rainfall
+43.66,-72.84,Moderate Rain,07/11/24,630 AM,VT,Rutland,Gifford Woods State Park,2,SW,,,RAIN,1.71,Inch,Public,Storm Total Rainfall
+44.0077,-73.1572,Moderate Rain,07/11/24,602 AM,VT,Addison,Middlebury,,,,,RAIN,1.68,Inch,Public,Storm Total Rainfall
+44.5877,-72.9225,Moderate Rain,07/11/24,700 AM,VT,Chittenden,Underhill,4,NNE,,,RAIN,1.64,Inch,CoCoRaHS,Storm Total Rainfall
+44.5981,-72.9188,Moderate Rain,07/11/24,610 AM,VT,Chittenden,Underhill,5,NNE,,,RAIN,1.63,Inch,CoCoRaHS,Storm Total Rainfall
+44.4914,-73.1119,Moderate Rain,07/11/24,700 AM,VT,Chittenden,Essex Jct,,,,,RAIN,1.61,Inch,Mesonet,Storm Total Rainfall
+43.6386,-72.72,Moderate Rain,07/11/24,700 AM,VT,Windsor,Bridgewater,,,,,RAIN,1.6,Inch,Mesonet,Storm Total Rainfall
+44.48,-73.22,Moderate Rain,07/11/24,700 AM,VT,Chittenden,ECHO - Burlington Waterfront,,,,,RAIN,1.58,Inch,Mesonet,Storm Total Rainfall
+44.4811,-73.2187,Moderate Rain,07/11/24,700 AM,VT,Chittenden,Burlington,1,NW,,,RAIN,1.57,Inch,CoCoRaHS,Storm Total Rainfall
+44.6272,-72.8417,Moderate Rain,07/11/24,700 AM,VT,Lamoille,Jeffersonville,1,SSW,,,RAIN,1.54,Inch,CoCoRaHS,Storm Total Rainfall
+44.9081,-72.9214,Moderate Rain,07/11/24,700 AM,VT,Franklin,Sheldon Junction,,,,,RAIN,1.51,Inch,Mesonet,Storm Total Rainfall
+43.99,-72.18,Moderate Rain,07/11/24,659 AM,VT,Orange,Bradford Center,2,SSW,,,RAIN,1.51,Inch,Public,Storm Total Rainfall
+43.6752,-73.0154,Moderate Rain,07/11/24,545 AM,VT,Rutland,Pittsford,2,SSE,,,RAIN,1.51,Inch,CoCoRaHS,Storm Total Rainfall
+43.9733,-73.0145,Moderate Rain,07/11/24,830 AM,VT,Addison,Ripton,1,E,,,RAIN,1.42,Inch,CoCoRaHS,Storm Total Rainfall
+43.37,-73.14,Moderate Rain,07/11/24,626 AM,VT,Rutland,Pawlet,2,NE,,,RAIN,1.35,Inch,Public,Storm Total Rainfall
+44.6653,-72.7992,Moderate Rain,07/11/24,700 AM,VT,Lamoille,Cambridge Junction,,,,,RAIN,1.32,Inch,Mesonet,Storm Total Rainfall
+43.8629,-73.0822,Moderate Rain,07/11/24,800 AM,VT,Addison,Leicester,1,E,,,RAIN,1.3,Inch,CoCoRaHS,Storm Total Rainfall
+43.7339,-72.6458,Moderate Rain,07/11/24,700 AM,VT,Windsor,Barnard,,,,,RAIN,1.3,Inch,Mesonet,Storm Total Rainfall
+44.5372,-73.0608,Moderate Rain,07/11/24,700 AM,VT,Chittenden,Essex,,,,,RAIN,1.27,Inch,Mesonet,Storm Total Rainfall
+43.82,-72.52,Moderate Rain,07/11/24,634 AM,VT,Windsor,South Royalton,,,,,RAIN,1.27,Inch,Public,Storm Total Rainfall
+43.9214,-72.2305,Moderate Rain,07/11/24,700 AM,VT,Orange,West Fairlee,2,ENE,,,RAIN,1.26,Inch,CoCoRaHS,Storm Total Rainfall
+44.1,-72.18,Moderate Rain,07/11/24,1133 AM,VT,Orange,Topsham Four Corners,2,E,,,RAIN,1.24,Inch,Public,Storm Total Rainfall
+43.6978,-73.3108,Moderate Rain,07/11/24,700 AM,VT,Rutland,Benson,,,,,RAIN,1.23,Inch,Mesonet,Storm Total Rainfall
+43.81,-73.3,Moderate Rain,07/11/24,602 AM,VT,Addison,Orwell,1,N,,,RAIN,1.21,Inch,Public,Storm Total Rainfall
+43.9418,-73.2832,Moderate Rain,07/11/24,800 AM,VT,Addison,Shoreham,4,NNE,,,RAIN,1.2,Inch,CoCoRaHS,Storm Total Rainfall
+43.8119,-73.3197,Moderate Rain,07/11/24,700 AM,VT,Addison,Orwell,1,WNW,,,RAIN,1.1,Inch,CoCoRaHS,Storm Total Rainfall
+43.8333,-72.3556,Moderate Rain,07/11/24,630 AM,VT,Orange,Strafford,2,SE,,,RAIN,1.07,Inch,CoCoRaHS,Storm Total Rainfall
+43.9972,-72.7157,Moderate Rain,07/11/24,700 AM,VT,Orange,Braintree,,,,,RAIN,1.06,Inch,Mesonet,Storm Total Rainfall
+43.52,-72.69,Moderate Rain,07/11/24,632 AM,VT,Windsor,Coolidge State Park,2,S,,,RAIN,1.05,Inch,Public,Storm Total Rainfall
+44.0278,-72.27,Moderate Rain,07/11/24,700 AM,VT,Orange,Corinth,,,,,RAIN,1.04,Inch,Mesonet,Storm Total Rainfall
+44.0281,-72.4725,Moderate Rain,07/11/24,700 AM,VT,Orange,Chelsea,,,,,RAIN,1,Inch,Mesonet,Storm Total Rainfall
+43.46,-72.83,Rain,07/11/24,630 AM,VT,Rutland,Mount Holly,1,NNW,,,RAIN,0.97,Inch,Public,Storm Total Rainfall
+43.54,-72.94,Rain,07/11/24,620 AM,VT,Rutland,Pierces Corner,1,E,,,RAIN,0.96,Inch,Public,Storm Total Rainfall
+43.715,-72.5067,Rain,07/11/24,700 AM,VT,Windsor,North Pomfret,,,,,RAIN,0.96,Inch,Mesonet,Storm Total Rainfall
+43.69,-72.5,Rain,07/11/24,633 AM,VT,Windsor,Pomfret,1,SE,,,RAIN,0.95,Inch,Public,Storm Total Rainfall
+43.5842,-72.5706,Rain,07/11/24,700 AM,VT,Windsor,Woodstock,,,,,RAIN,0.91,Inch,Mesonet,Storm Total Rainfall
+43.4337,-72.9903,Rain,07/11/24,700 AM,VT,Rutland,Wallingford,3,SSW,,,RAIN,0.87,Inch,CoCoRaHS,Storm Total Rainfall
+44.1083,-72.5694,Rain,07/11/24,700 AM,VT,Orange,Williamstown,,,,,RAIN,0.85,Inch,Mesonet,Storm Total Rainfall
+43.9811,-72.3669,Rain,07/11/24,700 AM,VT,Orange,Vershire,,,,,RAIN,0.84,Inch,Mesonet,Storm Total Rainfall
+43.8012,-73.0865,Rain,07/11/24,620 AM,VT,Rutland,Brandon,,,,,RAIN,0.84,Inch,Public,Storm Total Rainfall
+43.8942,-72.7699,Rain,07/11/24,700 AM,VT,Windsor,Rochester,2,NE,,,RAIN,0.84,Inch,CoCoRaHS,Storm Total Rainfall
+43.6253,-72.9779,Rain,07/11/24,700 AM,VT,Rutland,Rutland,1,N,,,RAIN,0.83,Inch,CoCoRaHS,Storm Total Rainfall
+43.7408,-72.7208,Rain,07/11/24,700 AM,VT,Windsor,Stockbridge,,,,,RAIN,0.83,Inch,Mesonet,Storm Total Rainfall
+43.5081,-72.8824,Rain,07/11/24,700 AM,VT,Rutland,Shrewsbury,1,W,,,RAIN,0.8,Inch,CoCoRaHS,Storm Total Rainfall
+44.0069,-72.3194,Rain,07/11/24,655 AM,VT,Orange,Corinth Corners,2,E,,,RAIN,0.79,Inch,Co-Op Observer,Storm Total Rainfall
+43.8228,-72.6019,Rain,07/11/24,700 AM,VT,Windsor,Royalton,,,,,RAIN,0.78,Inch,Mesonet,Storm Total Rainfall
+43.894,-72.7715,Rain,07/11/24,815 AM,VT,Windsor,Rochester,,,,,RAIN,0.77,Inch,CWOP,Storm Total Rainfall
+43.78,-72.3,Rain,07/11/24,633 AM,VT,Windsor,Goodrich Four Corners,2,NNW,,,RAIN,0.77,Inch,Public,Storm Total Rainfall
+43.9357,-72.7483,Rain,07/11/24,730 AM,VT,Orange,Braintree,3,SW,,,RAIN,0.75,Inch,CoCoRaHS,Storm Total Rainfall
+43.43,-73.2,Rain,07/11/24,626 AM,VT,Rutland,Wells,1,N,,,RAIN,0.75,Inch,Public,Storm Total Rainfall
+43.4281,-73.2006,Rain,07/11/24,700 AM,VT,Rutland,Wells,,,,,RAIN,0.74,Inch,Mesonet,Storm Total Rainfall
+43.8061,-72.1886,Rain,07/11/24,700 AM,VT,Orange,East Thetford,,,,,RAIN,0.73,Inch,Mesonet,Storm Total Rainfall
+43.89,-72.21,Rain,07/11/24,659 AM,VT,Orange,Ely,2,WNW,,,RAIN,0.72,Inch,Public,Storm Total Rainfall
+43.8444,-72.7026,Rain,07/11/24,823 AM,VT,Windsor,Bethel,4,WNW,,,RAIN,0.72,Inch,CoCoRaHS,Storm Total Rainfall
+43.5167,-72.95,Rain,07/11/24,756 AM,VT,Rutland,Rutland Airport,,,,,RAIN,0.7,Inch,AWOS,Storm Total Rainfall
+43.87,-72.84,Rain,07/11/24,634 AM,VT,Windsor,Rochester,1,SW,,,RAIN,0.68,Inch,Public,Storm Total Rainfall
+43.7361,-72.8181,Rain,07/11/24,800 AM,VT,Rutland,Pittsfield,3,S,,,RAIN,0.66,Inch,CoCoRaHS,Storm Total Rainfall
+43.454,-72.9275,Rain,07/11/24,800 AM,VT,Rutland,Wallingford,3,ESE,,,RAIN,0.63,Inch,CoCoRaHS,Storm Total Rainfall
+43.6303,-72.5072,Rain,07/11/24,800 AM,VT,Windsor,Woodstock,1,E,,,RAIN,0.6,Inch,Co-Op Observer,Storm Total Rainfall
+43.8442,-72.1833,Rain,07/11/24,700 AM,VT,Orange,North Thetford,,,,,RAIN,0.58,Inch,Mesonet,Storm Total Rainfall
+43.8703,-72.5867,Rain,07/11/24,700 AM,VT,Windsor,East Bethel,,,,,RAIN,0.58,Inch,Mesonet,Storm Total Rainfall
+43.9344,-72.6583,Rain,07/11/24,755 AM,VT,Orange,Randolph,1,NE,,,RAIN,0.57,Inch,HADS,Storm Total Rainfall
+43.735,-72.2938,Rain,07/11/24,700 AM,VT,Windsor,Norwich,2,NNE,,,RAIN,0.57,Inch,CoCoRaHS,Storm Total Rainfall
+43.94,-72.66,Rain,07/11/24,700 AM,VT,Orange,Randolph,,,,,RAIN,0.53,Inch,Mesonet,Storm Total Rainfall
+43.4458,-72.7808,Rain,07/11/24,700 AM,VT,Rutland,Mount Holly,,,,,RAIN,0.51,Inch,Mesonet,Storm Total Rainfall
+43.7914,-72.2572,Rain,07/11/24,700 AM,VT,Orange,Union Village NEPP,,,,,RAIN,0.5,Inch,Co-Op Observer,Storm Total Rainfall
+43.6433,-72.4323,Rain,07/11/24,818 AM,VT,Windsor,QUECHEE,,,,,RAIN,0.45,Inch,CWOP,Storm Total Rainfall
+43.4673,-73.2143,Rain,07/11/24,820 AM,VT,Rutland,POULTNEY,,,,,RAIN,0.44,Inch,CWOP,Storm Total Rainfall
+43.4147,-72.8042,Rain,07/11/24,700 AM,VT,Rutland,Belmont,,,,,RAIN,0.44,Inch,Mesonet,Storm Total Rainfall
+43.5806,-73.0407,Rain,07/11/24,800 AM,VT,Rutland,West Rutland,1,SSE,,,RAIN,0.42,Inch,CoCoRaHS,Storm Total Rainfall
+43.6027,-72.3621,Rain,07/11/24,700 AM,VT,Windsor,North Hartland,1,NNE,,,RAIN,0.27,Inch,Co-Op Observer,Storm Total Rainfall
+43.6107,-73.0466,Rain,07/11/24,615 AM,VT,Rutland,West Rutland,1,N,,,RAIN,0.25,Inch,CoCoRaHS,Storm Total Rainfall
+43.5211,-72.5356,Rain,07/11/24,700 AM,VT,Windsor,Reading,,,,,RAIN,0.25,Inch,Mesonet,Storm Total Rainfall
+43.5236,-72.6936,Rain,07/11/24,700 AM,VT,Windsor,Plymouth,,,,,RAIN,0.23,Inch,Mesonet,Storm Total Rainfall
+43.4,-72.48,Rain,07/11/24,631 AM,VT,Windsor,Nelsons Corner,1,SE,,,RAIN,0.19,Inch,Public,Storm Total Rainfall
+43.31,-72.76,Rain,07/11/24,631 AM,VT,Windsor,Middletown,2,NW,,,RAIN,0.17,Inch,Public,Storm Total Rainfall
+43.5336,-72.4805,Rain,07/11/24,800 AM,VT,Windsor,Hartland,4,W,,,RAIN,0.16,Inch,CoCoRaHS,Storm Total Rainfall
+43.4616,-72.492,Rain,07/11/24,700 AM,VT,Windsor,West Windsor,2,S,,,RAIN,0.16,Inch,CoCoRaHS,Storm Total Rainfall
+43.4069,-72.434,Rain,07/11/24,630 AM,VT,Windsor,Weathersfield,1,WNW,,,RAIN,0.16,Inch,CoCoRaHS,Storm Total Rainfall
+43.4567,-72.4142,Rain,07/11/24,700 AM,VT,Windsor,Windsor,,,,,RAIN,0.15,Inch,Mesonet,Storm Total Rainfall
