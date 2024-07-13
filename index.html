@@ -3,19 +3,19 @@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148880311-1"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148880311-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-148880311-1');
-</script>
+</script> -->
 
 
 <head>
   <meta charset=utf-8 />
-  <title>Working List of KY Greenhouses</title>
+  <title>VT FEMA Flood Map</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link href='https://api.mapbox.com/mapbox-assembly/v0.21.2/assembly.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
@@ -184,7 +184,7 @@
 <body>
 
   <section id="title">
-    <b>Working List of KY Greenhouses</b>
+    <b>Vermont Fema Flood Map</b>
   </section>
 
   <div id="map" class='viewport-full viewport-full-ml'></div>
@@ -227,13 +227,13 @@
   <script>
 
   // initialize map, centered on KY
-  var southWest = L.latLng(35.51, -90.29),
-      northEast = L.latLng(40.24, -80.69),
+  var southWest = L.latLng(42.35, -74.16),
+      northEast = L.latLng(45.59, -70.84),
       bounds = L.latLngBounds(southWest, northEast);
 
   var map = L.map('map', {
       zoomSnap: 0,
-      center: [37.839333, -85.7],
+      center: [44.247, -72.584],
       maxBounds: bounds,
       zoom: 7.5,
       minZoom: 6.5,
@@ -241,12 +241,11 @@
     });
 
   // mapbox API access Token
-    var accessToken = 'pk.eyJ1Ijoia29uc29sdXMiLCJhIjoiY2pnd2d2dXJrMTk4MzMzcGRmNjl6enpmYyJ9.MC43t60Y6axGbi32YET_tA'
+    // var accessToken = 'pk.eyJ1Ijoia29uc29sdXMiLCJhIjoiY2pnd2d2dXJrMTk4MzMzcGRmNjl6enpmYyJ9.MC43t60Y6axGbi32YET_tA'
 
   // request a mapbox raster tile layer and add to map
-    L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', {
-	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	subdomains: 'abcd',
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
      maxNativeZoom: 15,
 	ext: 'png'
     }).addTo(map);
@@ -271,8 +270,8 @@
 
   // set display style for county polygons
     var countyStyle = {
-        "color": "#00823f",
-        "weight": 2,
+        "color": "#ffffff",
+        "weight": 1.5,
         "fillOpacity" : 0.05,
         "opacity": 0.8
     };
@@ -314,9 +313,9 @@
         popupAnchor: [0, -15]
     });
 
-    // load KY county polygons
-  $.getJSON("./data/ky-counties.geojson", function(counties) {
-
+    // load VT county polygons
+  $.getJSON("./data/vt-counties.geojson", function(counties) {
+        console.log(counties);
         // load CSV file
         omnivore.csv('data/KGM_geocoded.csv')
         .on('ready', function(e) {
@@ -504,7 +503,8 @@
       var dataLayer = L.geoJson(data, {
         style: style,
         onEachFeature: function (feature, layer) {
-              layer.bindTooltip("<h2>" + feature.properties.name + " County</h2>");
+              layer.bindTooltip("<h2>" + feature.properties.NAME + "</h2>" + "<p>Total Population: <b>" + feature.properties.P0010001.toLocaleString() + "</b><br>"
+            + "Total Housing Units: <b>" + feature.properties.H0010001.toLocaleString('en-US') + "</b><br>" + "Percent Housing Vacant: <b>" + feature.properties.PCT_H0010002.toPrecision(3) + "%</b></p>");
         }
       });
       dataLayer.addTo(map);
