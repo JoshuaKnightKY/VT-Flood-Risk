@@ -229,11 +229,11 @@
       bounds = L.latLngBounds(southWest, northEast);
 
   var map = L.map('map', {
-      zoomSnap: 0,
+      // zoomSnap: 0,
       center: [44.247, -72.584],
       maxBounds: bounds,
       zoom: 7.5,
-      minZoom: 6.5,
+      minZoom: 5,
       maxZoom: 15,
     });
 
@@ -273,39 +273,65 @@
         "opacity": 0.8
     };
 
+    var floodStyleA = {
+        "color": "#C70039",
+        "weight": 0.5,
+        "fillOpacity" : 0.3,
+        "opacity": 0.8
+    };
+
+    var floodStyleX = {
+        "color": "#00ef00",
+        "weight": 0.5,
+        "fillOpacity" : 0.3,
+        "opacity": 0.8
+    };
+
     // set icons for layer types
     var rainEventIcon = L.icon({
         iconUrl: "./icons/rainEventicon.png",
         iconSize: [40, 40],
+        shadowUrl: "./icons/RainEventIconShadow.png",
+        shadowSize: [44, 44],
         popupAnchor: [0, -15]
     });
 
     var extremeRainEventIcon = L.icon({
         iconUrl: "./icons/extremeRainEventicon.png",
+        shadowUrl: "./icons/RainEventIconShadow.png",
+        shadowSize: [44, 44],
         iconSize: [40, 40],
         popupAnchor: [0, -15]
     });
 
     var severeRainEventIcon = L.icon({
         iconUrl: "./icons/severeRainEventicon.png",
+        shadowUrl: "./icons/RainEventIconShadow.png",
+        shadowSize: [44, 44],
         iconSize: [40, 40],
         popupAnchor: [0, -15]
     });
 
     var heavyRainEventIcon = L.icon({
         iconUrl: "./icons/heavyRainEventicon.png",
+        shadowUrl: "./icons/RainEventIconShadow.png",
+        shadowSize: [44, 44],
         iconSize: [40, 40],
         popupAnchor: [0, -15]
     });
 
     var intenseRainEventIcon = L.icon({
         iconUrl: "./icons/intenseRainEventicon.png",
+        shadowUrl: "./icons/RainEventIconShadow.png",
+        shadowSize: [44, 44],
         iconSize: [40, 40],
         popupAnchor: [0, -15]
     });
 
     var moderateRainEventIcon = L.icon({
         iconUrl: "./icons/moderateRainEventicon.png",
+        shadowUrl: "./icons/RainEventIconShadow.png",
+        shadowSize: [44, 44],
         iconSize: [40, 40],
         popupAnchor: [0, -15]
     });
@@ -313,7 +339,7 @@
     // load VT county polygons
   $.getJSON("./data/vt-counties.geojson", function(counties) {
         console.log(counties);
-        // load CSV file
+        // load rainfall CSV
         omnivore.csv('data/rainfall-data-july-2024-storm.csv')
         .on('ready', function(e) {
             console.log(e.target);
@@ -323,7 +349,11 @@
         .on('error', function(e) {
             console.log(e.error);
     });
+  });
 
+  $.getJSON("./data/FEMA NFHL Zones Compressed.geojson", function(floodZones) {
+        console.log(floodZones);
+        addFloodDataToMap(floodZones, floodStyleA, floodStyleX, map);
   });
 
   function drawMap(data) {
@@ -425,7 +455,7 @@
     };
 
     var baseMaps = {
-         "<b>&#9;Simple Black & White</b>" : simpleTile,
+         // "<b>&#9;Simple Black & White</b>" : simpleTile,
          "<b>&#9;USGS Terrain</b>" : terrainTile
     };
 
@@ -491,6 +521,22 @@
               layer.bindTooltip("<h2>" + feature.properties.NAME + "</h2>" + "<p>Total Population: <b>" + feature.properties.P0010001.toLocaleString() + "</b><br>"
             + "Total Housing Units: <b>" + feature.properties.H0010001.toLocaleString('en-US') + "</b><br>" + "Percent Housing Occupied: <b>" + feature.properties.PCT_H0010002.toPrecision(3) + "%</b></p>");
         }
+      });
+      dataLayer.addTo(map);
+  }
+
+  function addFloodDataToMap(data, styleA, styleX, map) {
+      var dataLayer = L.geoJson(data, {
+          style: styleX,
+      onEachFeature: function (feature, layer) {
+      if (feature.properties.FLD_ZONE === "X") {} else {
+        layer.setStyle({
+             "color": "#C70039",
+             "fillOpacity" : 0.5
+        });
+      }
+    }
+
       });
       dataLayer.addTo(map);
   }
