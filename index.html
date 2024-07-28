@@ -15,7 +15,7 @@
 
 <head>
   <meta charset=utf-8 />
-  <title>VT FEMA Flood Map</title>
+  <title>VT Flood & Fiber Route Map</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link href='https://api.mapbox.com/mapbox-assembly/v0.21.2/assembly.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
@@ -184,7 +184,7 @@
 <body>
 
   <section id="title">
-    <b>Vermont Flood Hazard Map</b>
+    <b>Flood Hazards (2023) & Fiber Routes (2022)</b>
   </section>
 
   <div id="map" class='viewport-full viewport-full-ml'></div>
@@ -199,7 +199,7 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <p><h2>About This Map</h2><br>
-        Using 2020 USCensus, FEMA Flood Hazard Data, and National Weather Service, this interactive map shows county census information, flood prone areas, and historical rainstorm events.</p><br>
+        Using 2020 USCensus, FEMA Flood Hazard Data, and VT Broadband Fiber Route Data, this interactive map shows county census information, flood prone areas, and historical rainstorm events.</p><br>
         <h2>Using This Map</h2><br>
         <p><b>Clicking/tapping</b> an icon on the map shows shows detail.</p><br>
         <p>The +/- buttons at the top left <b>zoom in and out</b>, as does the mouse wheel, and standard mobile gestures.</p><br>
@@ -232,9 +232,9 @@
       // zoomSnap: 0,
       center: [44.247, -72.584],
       maxBounds: bounds,
-      zoom: 7.5,
+      zoom: 10,
       minZoom: 5,
-      maxZoom: 15,
+      maxZoom: 18,
     });
 
   // mapbox API access Token
@@ -243,7 +243,7 @@
   // request a mapbox raster tile layer and add to map
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
-     maxNativeZoom: 15,
+     maxNativeZoom: 16,
 	ext: 'png'
     }).addTo(map);
 
@@ -282,9 +282,15 @@
 
     var floodStyleX = {
         "color": "#00ef00",
-        "weight": 0.5,
-        "fillOpacity" : 0.3,
-        "opacity": 0.8
+        "weight": 0.1,
+        "fillOpacity" : 0.1,
+        "opacity": 0.4
+    };
+
+    var fiberStyle = {
+        "color": "#34495e",
+        "weight": 1,
+        "opacity": 1
     };
 
     // set icons for layer types
@@ -336,25 +342,29 @@
         popupAnchor: [0, -15]
     });
 
-    // load VT county polygons
-  $.getJSON("./data/vt-counties.geojson", function(counties) {
-        console.log(counties);
-        // load rainfall CSV
-        omnivore.csv('data/rainfall-data-july-2024-storm.csv')
-        .on('ready', function(e) {
-            console.log(e.target);
-            drawMap(e.target.toGeoJSON());
-            addDataToMap(counties, countyStyle, map);
-        })
-        .on('error', function(e) {
-            console.log(e.error);
-    });
-  });
-
   $.getJSON("./data/FEMA NFHL Zones Compressed.geojson", function(floodZones) {
-        console.log(floodZones);
         addFloodDataToMap(floodZones, floodStyleA, floodStyleX, map);
   });
+
+  $.getJSON("./data/VT Fiber Routes 2022 Compressed.geojson", function(fiberRoutes) {
+        console.log(fiberRoutes);
+        addFiberDataToMap(fiberRoutes, fiberStyle, map);
+  });
+
+  // load VT county polygons
+$.getJSON("./data/vt-counties.geojson", function(counties) {
+      console.log(counties);
+      // load rainfall CSV
+      omnivore.csv('data/rainfall-data-july-2024-storm.csv')
+      .on('ready', function(e) {
+          console.log(e.target);
+          // drawMap(e.target.toGeoJSON());
+          addDataToMap(counties, countyStyle, map);
+      })
+      .on('error', function(e) {
+          console.log(e.error);
+  });
+});
 
   function drawMap(data) {
 
@@ -461,15 +471,15 @@
 
     // legend for turning on/off layers
     var sourcesLabels = {
-      "<img src='icons/extremeRainEventicon.png' height='20' width='20'><b>&nbsp;Extreme - above 6 in</b>": geoJsonLayers.extremeRainEventLayer,
-      "<img src='icons/severeRainEventicon.png' height='20' width='20'><b>&nbsp;Severe - 5-6 in</b>": geoJsonLayers.severeRainEventLayer,
-      "<img src='icons/heavyRainEventicon.png' height='20' width='20'><b>&nbsp;Heavy - 4-5 in</b>": geoJsonLayers.heavyRainEventLayer,
-      "<img src='icons/intenseRainEventicon.png' height='20' width='20'><b>&nbsp;Intense - 2.5-4 in</b>": geoJsonLayers.intenseRainEventLayer,
-      "<img src='icons/moderateRainEventicon.png' height='20' width='20'><b>&nbsp;Moderate - 1-2.5 in in</b>": geoJsonLayers.moderateRainEventLayer,
-      "<img src='icons/rainEventicon.png' height='20' width='20'><b>&nbsp;Rain Event - below 1 in</b>": geoJsonLayers.rainEventLayer,
+      "<img src='icons/extremeRainEventIcon.png' height='20' width='20'><b>&nbsp;Extreme - above 6 in</b>": geoJsonLayers.extremeRainEventLayer,
+      "<img src='icons/severeRainEventIcon.png' height='20' width='20'><b>&nbsp;Severe - 5-6 in</b>": geoJsonLayers.severeRainEventLayer,
+      "<img src='icons/heavyRainEventIcon.png' height='20' width='20'><b>&nbsp;Heavy - 4-5 in</b>": geoJsonLayers.heavyRainEventLayer,
+      "<img src='icons/intenseRainEventIcon.png' height='20' width='20'><b>&nbsp;Intense - 2.5-4 in</b>": geoJsonLayers.intenseRainEventLayer,
+      "<img src='icons/moderateRainEventIcon.png' height='20' width='20'><b>&nbsp;Moderate - 1-2.5 in in</b>": geoJsonLayers.moderateRainEventLayer,
+      "<img src='icons/rainEventIcon.png' height='20' width='20'><b>&nbsp;Rain Event - below 1 in</b>": geoJsonLayers.rainEventLayer,
     };
 
-    L.control.layers(baseMaps, sourcesLabels, { collapsed:true }).addTo(map);
+    // L.control.layers(baseMaps, sourcesLabels, { collapsed:true }).addTo(map);
 
     // info modal code
     var modal = document.getElementById('myModal');
@@ -518,8 +528,7 @@
       var dataLayer = L.geoJson(data, {
         style: style,
         onEachFeature: function (feature, layer) {
-              layer.bindTooltip("<h2>" + feature.properties.NAME + "</h2>" + "<p>Total Population: <b>" + feature.properties.P0010001.toLocaleString() + "</b><br>"
-            + "Total Housing Units: <b>" + feature.properties.H0010001.toLocaleString('en-US') + "</b><br>" + "Percent Housing Occupied: <b>" + feature.properties.PCT_H0010002.toPrecision(3) + "%</b></p>");
+              layer.bindTooltip("<h2>" + feature.properties.NAME + "</h2>");
         }
       });
       dataLayer.addTo(map);
@@ -541,6 +550,13 @@
       dataLayer.addTo(map);
   }
 
+  function addFiberDataToMap(data, styleF, map) {
+      console.log(data, styleF);
+      var dataLayer = L.geoJson(data, {
+          style: styleF,
+      });
+      dataLayer.addTo(map);
+  }
 
   </script>
 
